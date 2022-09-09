@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rifqi Nugraha</title>
+</head>
+<body>
+    <h1>Daftar 5 Teman Terbaik</h1>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" 
+    integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <style>
+        body{
+    width: 100%;
+    height:100px;
+    display:grid;
+    place-items: center;
+        }
+
+    th {
+        background-color:#1C6758
+    }
+
+
+
+
+th:hover {
+    background-color: #bb8859;
+    transform: scale(1);
+}
+
+
+
+
+tr:nth-child(odd) {
+    background-color:#90B77D;
+}
+
+
+
+tr:nth-child(odd):hover {
+    background-color: #D6CDA4;
+    transform: scale(1);
+}
+
+
+tr:nth-child(even) {
+    background-color: #EEF2E6;
+}
+
+
+
+tr:nth-child(even):hover {
+    background-color: #D6CDA4;
+    transform: scale(1);
+}
+
+
+
+.jeruk {
+    background-color: #FFD39A;
+}
+.jeruk:hover {
+    background-color: rgb(61, 73, 111);
+    transform: scale(1);
+}
+
+      
+    </style>
+    <table class="teman" border="1"cellspacing="0" cellpadding="10">
+        <tr>
+            <th>No</th>
+            <th>Nama</th>
+            <th>Nim</th>
+            <th>Alamat</th>
+            <th colspan="2">Aksi</th>
+        </tr>
+        <tr id="dora__1">
+            <td>1</td>
+            <td class="orang">Pitria Khoirunisa</td>
+            <td class="tempe">41215607</td>
+            <td class="minions">Kabupaten Ciamis</td>
+            <td class="jeruk" id="delete__1">Delete</td>
+           
+        </tr>
+        <tr id="dora__2">
+            <td>2</td>
+            <td class="orang">Rizki Ramdani</td>
+            <td class="tempe">41215615</td>
+            <td class="minions"> Kabupaten Ciamis</td>
+            <td class="jeruk" id="delete__2">Delete</td>
+        
+        </tr>
+        <tr id="dora__3">
+            <td>3</td>
+            <td class="orang">Eti Rohayati</td>
+            <td class="tempe">41215593</td>
+            <td class="minions">Kabupaten Ciamis</td>
+            <td class="jeruk" id="delete__3">Delete</td>
+            
+        </tr>
+        <tr id="dora__4">
+            <td >4</td>
+            <td class="orang"> Deris Setiadi</td>
+            <td class="tempe">41215448</td>
+            <td class="minions">Kabupaten Indramayu</td>
+            <td class="jeruk" id="delete__4">Delete</td>
+           
+        </tr>
+        <tr id="dora__5">
+            <td>5</td>
+            <td class="orang">Bagus Hermawan</td>
+            <td class="tempe">41215908 </td>
+            <td class="minions">Kabupaten Majalengka </td>
+            <td class="jeruk" id="delete__5">Delete</td>
+           
+        </tr>  
+    </table>
+    <script>
+        $(document).ready(function() {
+            //alert(0)
+            $('.orang').click(function () {
+                //alert(3)
+                let awal = $(this).text();
+               // alert(isi);
+               let hasil = prompt('Ganti Nama?',awal);
+               if (!hasil)return; {
+                //alert(hasil)
+                $(this).text(hasil);
+                
+               }
+                
+            })
+            $('.tempe').click(function () {
+                //alert(3)
+                let awal = $(this).text();
+               // alert(isi);
+               let hasil = prompt('Ganti Nim?',awal);
+               if (!hasil)return; {
+                //alert(hasil)
+                $(this).text(hasil);
+                
+               }
+                
+            })
+            $('.minions').click(function () {
+                //alert(3)
+                let awal = $(this).text();
+               // alert(isi);
+               let hasil = prompt('Ganti Alamat?',awal);
+               if (!hasil)return; {
+                //alert(hasil)
+                $(this).text(hasil);
+                
+               }
+                
+            })
+            $('.jeruk').click(function () {
+              // alert(1)
+              let serius = confirm('yakin mau menghapus?'); 
+              if(!serius)return;
+              let id = $(this).prop('id');
+              //alert(id);
+             
+              let rid = id.split('__');
+              let baris_ke =rid[1];
+              //alert(baris__ke)
+              $('#dora__'+baris_ke).slideUp()
+
+            })
+
+            
+        })
+       
+    </script>
+    
+</body>
+</html>
