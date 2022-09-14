@@ -1,0 +1,19 @@
+
+.oracle{
+    color: red;    
+}
+.oracle:hover{
+    transition: 1s;
+    color: black;
+}
+h5{
+    color: red;
+}
+a {
+    color: rgb(24, 89, 89);
+    text-decoration: none;
+}
+
+body{
+    background-color: antiquewhite;
+}
