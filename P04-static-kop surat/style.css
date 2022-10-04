@@ -1,0 +1,115 @@
+body {
+    background-color: #2B7A0B;
+    margin: 0;
+}
+
+.grup1 {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.canvas {
+    width: 793.7px;
+    background-color: white;
+    margin: 0 auto;
+    padding: 20px;
+    height: 100%;
+}
+
+.grup2 {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.logo {
+    width: 80px;
+    height: 80px;
+}
+
+.kampus {
+    font-size: 11px;
+    margin-top: 0px;
+}
+
+.nama_instansi {
+    display: flex;
+}
+
+.stmik_ikmi {
+    line-height: 40px;
+    font-size: 60px;
+    font-weight: bold;
+    color: #ff0000;
+    letter-spacing: 10px;
+}
+
+.stmik_ikmi_cirebon {
+    margin-top: 0px;
+}
+
+.stimik_ikmi {
+    font-size: 32px;
+    line-height: 20px;
+    font-weight: bold;
+    color: #0000ff;
+    letter-spacing: 7px;
+}
+
+.cirebon {
+    line-height: 29px;
+    font-size: 18px;
+    letter-spacing: 3px;
+    font-weight: bold;
+    color: #008800;
+}
+
+.alamat {
+    margin-top: 0px;
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+.alamat div {
+    letter-spacing: 2px;
+}
+
+.alamat a {
+    color: #0000ff;
+}
+
+.sk_akreditasi {
+    display: flex;
+    width: 100%;
+}
+
+.sk {
+    background-color: #a52a2a;
+    width: 55%;
+    text-align: center;
+    color: white;
+    padding: 2px 0px;
+}
+
+.akreditasi {
+    width: 45%;
+    background-color: #008000;
+    text-align: center;
+    color: white;
+    padding: 2px 0px;
+}
+
+.surat_tugas {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.surat {
+    font-size: 22px;
+    letter-spacing: 3px;
+    text-decoration: underline;
+    font-size: 22px;
+}
