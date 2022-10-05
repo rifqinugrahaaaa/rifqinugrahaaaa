@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dimastyle.css">
+    <title>jquery Sleding pak</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #Top {
+            width: 500px;
+            padding: 15px;
+            text-align: center;
+            background-color: #367E18;
+            border: solid 2px black;
+            margin: auto;
+            color: #EEEEEE;
+            
+        }
+    
+        #Bottom {
+            width: 400px;
+            height: 400px;
+            padding: 25px;
+            text-align: center;
+            background-color: #FFE9A0;
+            margin: auto;
+            box-shadow: 2px 2px 2px 2px gray;
+            display: none;
+            
+        }
+    </style>
+</head>
+<body>
+    
+        <div id="Top"><b>Quotes</b></div>
+        <div id="Bottom"><b>(QS Al-Ankabut: 57)</b> 
+            <br>
+            <br>
+            <b>    كُلُّ نَفْسٍ ذَاۤىِٕقَةُ الْمَوْتِۗ ثُمَّ اِلَيْنَا تُرْجَعُوْنَ</b>
+            <br>
+            <br>
+            <i><b> Artinya: yang bernyawa akan merasakan kematian. Kemudian hanya kepada Kamilah kalian dikembalikan.</b></i>
+
+        </div>
+    
+
+    <script
+        src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+        crossorigin="anonymous">
+    </script>
+    <script>
+        $(document).ready(function(){
+            $("#Top").click(function(){
+                $("#Bottom").slideToggle("slow");
+            });
+        });
+    </script>
+</body>
+</html>
