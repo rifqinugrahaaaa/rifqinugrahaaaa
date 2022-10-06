@@ -1,0 +1,64 @@
+body {
+    background-color: #B4E197;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  
+  li a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .navbar {
+    position: absolute;
+    background-color: #4E944F;
+    width: 100%;
+    height: 4rem;
+  }
+  
+  .nav1 {
+    font-size: 20px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding-right: 30px;
+  }
+  
+  .nav2 {
+    font-family: "Poppins-Medium";
+    font-size: 20px;
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 30rem;
+    list-style: none;
+  }
+  
+  .logo {
+    font-family:sans-serif;
+    position: absolute;
+    margin-left: 70px;
+    margin-top: 2px;
+    padding: top 5px;
+    font-size: 50px;
+    color: #E9EFC0;
+    list-style-type: none;
+  }
+  
+  #konten{
+    background-color: white;
+    border: solid 1px white;
+    padding-top: 8rem;
+    display: none;
+    color: black;
+    font-family: calibri;
+    border-radius: 6px;
+    box-shadow: 1px 1px 6px gray;
+  }
+  
+  .active {
+    font-weight: bold;
+  }
