@@ -1,0 +1,80 @@
+.minion {
+	clear: left;
+}
+li{
+	color: red;
+}
+
+.snow {
+	margin: 40px;
+}
+
+.max {
+	background-color: rgb(255, 248, 248);
+}
+
+
+.logo {
+	width: 150px; 
+	float: left; 
+	padding-right: 20px;
+}
+
+input[type=text] {
+	width: 100%;
+	padding: 5px 10px;
+	margin: 5px 0;
+	box-sizing: border-box;
+	border-radius: 4px;
+}
+
+input[type=text]:focus {
+	background-color: rgb(201, 230, 173);
+}
+
+select {
+	width: 100%;
+	padding: 5px 10px;
+	border: none;
+	border-radius: 4px;
+}
+
+input[type=date] {
+	padding: 5px 10px;
+	border: none;
+	border-radius: 4px;
+}
+
+textarea {
+	width: 100%;
+	padding: 12px 20px;
+	box-sizing: border-box;
+	border: 2px solid #ccc;
+	border-radius: 4px;
+	resize: none;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table,th,td {
+	height: 50px;
+}
+
+table.td {
+	padding: 15px;
+}
+
+hr {
+	border: 2px solid black;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+	[class="max"] {
+		width: 100%;
+		background-color: rgb(182, 230, 173);
+	}
+}
